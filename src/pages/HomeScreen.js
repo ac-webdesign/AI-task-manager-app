@@ -96,7 +96,7 @@ function HomeScreen() {
             <div>
               <div key={category.id} className={`hometask task${index + 1}`}>
                 <div className="taskheader">
-                  <img src={checkimage} className='checkimage' />
+                  <img src={checkimage} alt='checkimg' className='checkimage' />
 
                   {/* CATEGORY TYPE FIRST LETTER CAPITALIZED */}
                   <div>
@@ -110,7 +110,7 @@ function HomeScreen() {
               </div>
               <div className="task-count">
                 <div className="notification-circle">{category.subcategories.length}</div>
-                <img src={treeicon} />
+                <img src={treeicon} alt='treeicon'/>
               </div>
             </div>
             </Link>

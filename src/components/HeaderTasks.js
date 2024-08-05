@@ -1,17 +1,4 @@
-// import React from "react";
 
-// function HeaderTasks(){
-//     return <div className="task-header">
-//             <div className="navigation">
-//                 <div className="arrow-tasks">
-//                     <div className="arrow"></div>
-//                     <div className="tasks">Your tasks</div>
-//                 </div>
-//                 <div className="icon"></div>    
-//             </div>            
-//         </div>
-// }
-// export default HeaderTasks
 import { NavLink } from "react-router-dom";
 import React from "react";
 import { useLocation } from "react-router-dom";

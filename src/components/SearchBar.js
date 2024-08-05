@@ -19,7 +19,7 @@ function SearchBar({ handleSearch }) {
         value={query} 
         onChange={handleInputChange} 
       />
-      <img src={searchicon}/>
+      <img src={searchicon} alt='searchicon'/>
     </div>
   );
 }
