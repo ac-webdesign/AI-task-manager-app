@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 function HomeScreen() {
   const [categories, setCategories] = useState([]);
   const [filteredCategories, setFilteredCategories] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
+  // const [searchQuery, setSearchQuery] = useState('');
   const [activeSelection, setActiveSelection] = useState('tasks');
 
   // FETCHING THE CATEGORIES 
@@ -20,7 +20,12 @@ function HomeScreen() {
       .then(response => {
         setCategories(response.data);
         setFilteredCategories(response.data.filter(category => category.categoryType === 'task').slice(0, 10));
-
+        // const filtered = response.data.filter(category => 
+        //   category.categoryType === activeSelection &&
+        //   category.title.toLowerCase().includes(searchQuery.toLowerCase())
+        // ).slice(0, 10);
+  
+        // setFilteredCategories(filtered);
       })
       .catch(error => console.error('Error fetching categories:', error));
   }, []);
@@ -28,7 +33,7 @@ function HomeScreen() {
   //HANDLE SEARCH FROM CATEGORIES
 
   const handleSearch = (query) => {
-    setSearchQuery(query);
+    // setSearchQuery(query);
     if (query === '') {
       setFilteredCategories(categories.slice(0, 10));
     } else {

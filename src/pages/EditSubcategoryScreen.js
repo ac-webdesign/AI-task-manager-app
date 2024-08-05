@@ -4,10 +4,10 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function EditSubcategoryScreen() {
-  const { id, subcategoryIndex } = useParams();
+  
+  const { id } = useParams();
   const navigate = useNavigate();
   const [category, setCategory] = useState({ title: '', description: '', subcategories: [] });
-
   useEffect(() => {
     axios.get(`/categories/${id}`)
       .then(response => setCategory(response.data))
