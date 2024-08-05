@@ -1,0 +1,513 @@
+{
+  "categories": [
+    {
+      "id": "2f79",
+      "title": "BACKEND DEVELOPMENT",
+      "description": "Μαθαίνοντας backend development, θα πρέπει να εξοικειωθείς με διάφορες έννοιες, τεχνολογίες και πρακτικές που είναι θεμελιώδεις για τη δημιουργία και τη διαχείριση των διακομιστών και των βάσεων δεδομένων που υποστηρίζουν τις εφαρμογές ιστού. Εδώ είναι τα βασικά που πρέπει να γνωρίζεις:",
+      "subcategories": [
+        {
+          "title": "Γλώσσες Προγραμματισμού",
+          "description": "JavaScript (Node.js)"
+        },
+        {
+          "title": "Frameworks",
+          "description": "Express.js (node.js)"
+        },
+        {
+          "title": "Διαχείριση Δεδομένων και Βάσεις Δεδομένων",
+          "description": "SQL Databases: MySQL, PostgreSQL, SQL Server. Καλή γνώση της SQL είναι απαραίτητη. NoSQL Databases: MongoDB, Cassandra, Redis. Χρησιμοποιούνται για ευέλικτη και ταχεία αποθήκευση δεδομένων. ORM (Object-Relational Mapping): Χρήση εργαλείων όπως Sequelize (Node.js), SQLAlchemy (Python), Hibernate (Java) για την απλοποίηση της αλληλεπίδρασης με βάσεις δεδομένων."
+        },
+        {
+          "title": "Διαχείριση API",
+          "description": "REST: Αρχιτεκτονικό στυλ για τη δημιουργία web services. Κατανόηση των HTTP μεθόδων (GET, POST, PUT, DELETE). GraphQL: Ευέλικτο και αποδοτικό εναλλακτικό του REST για query και διαχείριση δεδομένων. Authentication & Authorization: Κατανόηση μεθόδων όπως JWT (JSON Web Tokens), OAuth για την ασφαλή πρόσβαση και διαχείριση χρηστών."
+        },
+        {
+          "title": "DevOps και Διαχείριση Διακομιστών",
+          "description": "Servers: Κατανόηση βασικών λειτουργιών διακομιστών, όπως Apache, Nginx. Containers: Docker για τη δημιουργία και την ανάπτυξη κοντέινερ που περιέχουν τις εφαρμογές. Continuous Integration/Continuous Deployment (CI/CD): Εργαλεία όπως Jenkins, Travis CI, CircleCI για αυτοματοποιημένη ανάπτυξη και έλεγχο εφαρμογών."
+        },
+        {
+          "title": "Εργαλεία και Υποδομές",
+          "description": "Version Control: Καλή γνώση του Git και πλατφορμών όπως GitHub, GitLab. Cloud Providers: AWS, Google Cloud, Azure για φιλοξενία και διαχείριση υποδομών. Command Line Interface (CLI): Άνεση στη χρήση της γραμμής εντολών για την εκτέλεση εντολών και την αυτοματοποίηση εργασιών."
+        },
+        {
+          "title": "Ασφάλεια",
+          "description": "Secure Coding Practices: Γνώση των καλύτερων πρακτικών για ασφαλή προγραμματισμό (π.χ., αποφυγή SQL injection, XSS). Encryption: Κατανόηση βασικών εννοιών κρυπτογράφησης και διαχείρισης κλειδιών."
+        },
+        {
+          "title": "Testing και Debugging",
+          "description": "Unit Testing: Χρήση εργαλείων όπως Mocha (Node.js), PyTest (Python), JUnit (Java) για την εκτέλεση δοκιμών μονάδας. Integration Testing: Έλεγχος της αλληλεπίδρασης μεταξύ διαφορετικών μονάδων του συστήματος. Debugging Tools: Χρήση των εργαλείων debugging που παρέχονται από το IDE ή το framework."
+        },
+        {
+          "title": "Σχεδίαση και Αρχιτεκτονική",
+          "description": "Design Patterns: Κατανόηση κοινών προτύπων σχεδίασης όπως Singleton, Factory, MVC (Model-View-Controller). Microservices Architecture: Κατανόηση της αρχιτεκτονικής microservices και πώς να διαχειρίζεσαι αποκεντρωμένα συστήματα."
+        }
+      ],
+      "createdAt": "01 Aug 2024 09:31 AM",
+      "categoryType": "task"
+    },
+    {
+      "id": "cf0f",
+      "title": "Finish full stack",
+      "description": "finish project , style, function",
+      "subcategories": [],
+      "createdAt": "08 Jan 2024 00:05 AM",
+      "categoryType": "task"
+    },
+    {
+      "id": "343b",
+      "title": "Airbnb",
+      "description": "What do i need for airnbnb",
+      "subcategories": [
+        {
+          "title": "Air conditioning",
+          "description": "200 euros"
+        },
+        {
+          "title": "Κρεβατοκαμαρα",
+          "description": "4 Σεντονια, 6 μαξιλαροθηκες, 1 κουβερτα, 4 πετσετες μεγαλες , 4 μεσαιες, 4 μικρες"
+        },
+        {
+          "title": "Κουζινα",
+          "description": "ψυγειο, βραστηρας, καφετιερα, πιατα, ποτηρια, μαχαιρι, κουταλια, πιρουνια"
+        },
+        {
+          "title": "Σαλονι",
+          "description": "Καναπες, τραπεζακι, επιπλο τηλεορασης, τηλεοραση, "
+        },
+        {
+          "title": "Accessories",
+          "description": "Σιδερο, πιστολακι, "
+        },
+        {
+          "title": "Wifi ",
+          "description": ""
+        }
+      ],
+      "createdAt": "03 Aug 2024 14:35 PM",
+      "categoryType": "task"
+    },
+    {
+      "id": "7",
+      "title": "Read More Books",
+      "description": "Expand your knowledge and imagination by reading more books.",
+      "subcategories": [
+        {
+          "title": "Create Reading List",
+          "description": "Compile a list of books you want to read."
+        },
+        {
+          "title": "Set Reading Goals",
+          "description": "Determine the number of books or pages to read each month."
+        },
+        {
+          "title": "Join a Book Club",
+          "description": "Participate in a book club to discuss and share your thoughts on books."
+        }
+      ],
+      "createdAt": "05 Aug 2024 00:38 AM",
+      "categoryType": "task"
+    },
+    {
+      "id": "831c",
+      "title": "Efarmogh",
+      "description": "osa leipoyn ",
+      "subcategories": [
+        {
+          "title": "Settings",
+          "description": "asd"
+        },
+        {
+          "title": "Otan pataw save ",
+          "description": "prwta feugei to pliktrologio kai prepei na ksanapatisw"
+        },
+        {
+          "title": "homescreen ",
+          "description": "anti gia to first task na valw checkbox oti oloklhrwthike kai gia diagrafi"
+        }
+      ],
+      "createdAt": "05 Aug 2024 02:29 AM",
+      "categoryType": "task"
+    },
+    {
+      "id": "3ba3",
+      "title": "This is a project",
+      "description": "asdfas",
+      "subcategories": [],
+      "createdAt": "05 Aug 2024 03:02 AM",
+      "categoryType": "project"
+    },
+    {
+      "id": "5b2c",
+      "title": "This is just a note",
+      "description": "a small oan sd",
+      "subcategories": [],
+      "createdAt": "05 Aug 2024 03:03 AM",
+      "categoryType": "note"
+    },
+    {
+      "id": "13",
+      "title": "Improve Mental Health",
+      "description": "Focus on activities and habits that improve your mental well-being.",
+      "subcategories": [
+        {
+          "title": "Practice Mindfulness",
+          "description": "Engage in mindfulness exercises like meditation or yoga."
+        },
+        {
+          "title": "Seek Therapy",
+          "description": "Consider talking to a therapist or counselor."
+        },
+        {
+          "title": "Maintain Work-Life Balance",
+          "description": "Prioritize a balance between work and personal time to reduce stress."
+        }
+      ],
+      "createdAt": "05 Aug 2024 03:16 AM",
+      "categoryType": "task"
+    },
+    {
+      "id": "0c0e",
+      "title": "tHIS IS AFUNK NOTE",
+      "description": "SDF",
+      "subcategories": [],
+      "createdAt": "05 Aug 2024 03:18 AM",
+      "categoryType": "note"
+    },
+    {
+      "id": "caab",
+      "title": "This is a note ",
+      "description": "a simple note",
+      "subcategories": [],
+      "createdAt": "05 Aug 2024 03:37 AM",
+      "categoryType": "note"
+    },
+    {
+      "id": "4",
+      "title": "Plan a Vacation",
+      "description": "Take a break from routine by planning an enjoyable and relaxing trip.",
+      "subcategories": [
+        {
+          "title": "Choose Destination",
+          "description": "Decide where you want to go based on your interests and budget."
+        },
+        {
+          "title": "Book Accommodations",
+          "description": "Reserve a place to stay, such as a hotel, Airbnb, or resort."
+        },
+        {
+          "title": "Create Itinerary",
+          "description": "Plan daily activities, sightseeing spots, and dining options for your trip."
+        }
+      ],
+      "createdAt": "05 Aug 2024 03:39 AM"
+    },
+    {
+      "id": "3",
+      "title": "Organize Home Office",
+      "description": "Create a productive and clutter-free workspace at home.",
+      "subcategories": [
+        {
+          "title": "Declutter Desk",
+          "description": "Clear off unnecessary items from your desk and organize essentials."
+        },
+        {
+          "title": "Set Up Storage Solutions",
+          "description": "Implement storage options like shelves, drawers, and bins for better organization."
+        },
+        {
+          "title": "Upgrade Equipment",
+          "description": "Invest in ergonomic furniture and update your computer or other office tools."
+        }
+      ],
+      "createdAt": "05 Aug 2024 03:41 AM",
+      "categoryType": "task"
+    }
+  ],
+  "generateAI": [
+    {
+      "id": "1",
+      "title": "Start Gym",
+      "description": "Begin your fitness journey by joining a gym and establishing a workout routine.",
+      "subcategories": [
+        {
+          "title": "Buy Gym Gear",
+          "description": "Purchase appropriate workout clothes, shoes, and accessories."
+        },
+        {
+          "title": "Sign Up for Membership",
+          "description": "Join a local gym or fitness center."
+        },
+        {
+          "title": "Create Workout Plan",
+          "description": "Develop a balanced workout schedule with a mix of cardio, strength, and flexibility exercises."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Learn a New Language",
+      "description": "Enhance your communication skills and cognitive abilities by learning a new language.",
+      "subcategories": [
+        {
+          "title": "Choose a Language",
+          "description": "Decide on a language that interests you or is beneficial for your goals."
+        },
+        {
+          "title": "Enroll in a Course",
+          "description": "Sign up for online or in-person language classes."
+        },
+        {
+          "title": "Practice Daily",
+          "description": "Dedicate time each day to practice speaking, listening, reading, and writing in the new language."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Organize Home Office",
+      "description": "Create a productive and clutter-free workspace at home.",
+      "subcategories": [
+        {
+          "title": "Declutter Desk",
+          "description": "Clear off unnecessary items from your desk and organize essentials."
+        },
+        {
+          "title": "Set Up Storage Solutions",
+          "description": "Implement storage options like shelves, drawers, and bins for better organization."
+        },
+        {
+          "title": "Upgrade Equipment",
+          "description": "Invest in ergonomic furniture and update your computer or other office tools."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Plan a Vacation",
+      "description": "Take a break from routine by planning an enjoyable and relaxing trip.",
+      "subcategories": [
+        {
+          "title": "Choose Destination",
+          "description": "Decide where you want to go based on your interests and budget."
+        },
+        {
+          "title": "Book Accommodations",
+          "description": "Reserve a place to stay, such as a hotel, Airbnb, or resort."
+        },
+        {
+          "title": "Create Itinerary",
+          "description": "Plan daily activities, sightseeing spots, and dining options for your trip."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Start a Garden",
+      "description": "Enjoy the benefits of fresh produce and flowers by starting your own garden.",
+      "subcategories": [
+        {
+          "title": "Choose Plants",
+          "description": "Select a variety of plants based on your gardening goals and climate."
+        },
+        {
+          "title": "Prepare Soil",
+          "description": "Test and amend the soil to ensure it is suitable for planting."
+        },
+        {
+          "title": "Set Up Watering System",
+          "description": "Install an efficient watering system, such as drip irrigation or soaker hoses."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Learn to Cook",
+      "description": "Develop culinary skills by learning new recipes and cooking techniques.",
+      "subcategories": [
+        {
+          "title": "Buy Cookware",
+          "description": "Purchase essential kitchen tools and utensils."
+        },
+        {
+          "title": "Enroll in Cooking Class",
+          "description": "Join a local or online cooking class to learn new recipes and techniques."
+        },
+        {
+          "title": "Practice Recipes",
+          "description": "Cook different recipes to improve your skills and expand your culinary repertoire."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Read More Books",
+      "description": "Expand your knowledge and imagination by reading more books.",
+      "subcategories": [
+        {
+          "title": "Create Reading List",
+          "description": "Compile a list of books you want to read."
+        },
+        {
+          "title": "Set Reading Goals",
+          "description": "Determine the number of books or pages to read each month."
+        },
+        {
+          "title": "Join a Book Club",
+          "description": "Participate in a book club to discuss and share your thoughts on books."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Improve Personal Finance",
+      "description": "Take control of your finances by budgeting, saving, and investing wisely.",
+      "subcategories": [
+        {
+          "title": "Create Budget",
+          "description": "Develop a budget to manage your income and expenses."
+        },
+        {
+          "title": "Build Emergency Fund",
+          "description": "Save money for unexpected expenses or financial emergencies."
+        },
+        {
+          "title": "Invest in Retirement",
+          "description": "Contribute to retirement accounts to secure your financial future."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Start a Blog",
+      "description": "Share your thoughts, experiences, and expertise by starting a blog.",
+      "subcategories": [
+        {
+          "title": "Choose a Niche",
+          "description": "Decide on a specific topic or niche for your blog."
+        },
+        {
+          "title": "Set Up Website",
+          "description": "Create a website using a blogging platform like WordPress."
+        },
+        {
+          "title": "Write Content",
+          "description": "Regularly publish articles or posts on your chosen topics."
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Learn a Musical Instrument",
+      "description": "Enhance your musical skills by learning to play a new instrument.",
+      "subcategories": [
+        {
+          "title": "Choose an Instrument",
+          "description": "Select an instrument that you are interested in learning."
+        },
+        {
+          "title": "Take Lessons",
+          "description": "Enroll in lessons with a music teacher or use online tutorials."
+        },
+        {
+          "title": "Practice Regularly",
+          "description": "Dedicate time each day to practice playing the instrument."
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Volunteer",
+      "description": "Give back to your community by volunteering for a cause you care about.",
+      "subcategories": [
+        {
+          "title": "Choose a Cause",
+          "description": "Identify a cause or organization you want to support."
+        },
+        {
+          "title": "Find Opportunities",
+          "description": "Look for local or online volunteering opportunities."
+        },
+        {
+          "title": "Commit Time",
+          "description": "Schedule regular time to volunteer and contribute to the cause."
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Take Online Courses",
+      "description": "Enhance your skills and knowledge by taking online courses.",
+      "subcategories": [
+        {
+          "title": "Choose a Platform",
+          "description": "Select an online learning platform like Coursera, Udemy, or edX."
+        },
+        {
+          "title": "Select Courses",
+          "description": "Pick courses that align with your interests or career goals."
+        },
+        {
+          "title": "Complete Assignments",
+          "description": "Regularly complete course assignments and assessments."
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Improve Mental Health",
+      "description": "Focus on activities and habits that improve your mental well-being.",
+      "subcategories": [
+        {
+          "title": "Practice Mindfulness",
+          "description": "Engage in mindfulness exercises like meditation or yoga."
+        },
+        {
+          "title": "Seek Therapy",
+          "description": "Consider talking to a therapist or counselor."
+        },
+        {
+          "title": "Maintain Work-Life Balance",
+          "description": "Prioritize a balance between work and personal time to reduce stress."
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Develop a New Hobby",
+      "description": "Find a new hobby to enjoy and spend your free time on.",
+      "subcategories": [
+        {
+          "title": "Identify Interests",
+          "description": "Explore different activities to find what you enjoy."
+        },
+        {
+          "title": "Gather Supplies",
+          "description": "Get the necessary supplies or equipment for your chosen hobby."
+        },
+        {
+          "title": "Schedule Time",
+          "description": "Set aside regular time each week to engage in your new hobby."
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Improve Physical Health",
+      "description": "Adopt habits and routines to enhance your physical well-being.",
+      "subcategories": [
+        {
+          "title": "Create Exercise Routine",
+          "description": "Develop a regular exercise schedule."
+        },
+        {
+          "title": "Eat Balanced Diet",
+          "description": "Plan and consume nutritious meals."
+        },
+        {
+          "title": "Get Regular Checkups",
+          "description": "Schedule and attend regular medical checkups."
+        }
+      ]
+    }
+  ]
+}

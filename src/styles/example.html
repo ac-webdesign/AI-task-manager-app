@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI To-Do Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #generateBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>AI To-Do Generator</h1>
+    <button id="generateBtn">Generate To-Do</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    document.getElementById('generateBtn').addEventListener('click', async () => {
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'none';
+        resultDiv.innerHTML = 'Generating...';
+        resultDiv.style.display = 'block';
+
+        try {
+            const response = await fetch('https://api.openai.com/v1/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer sk-proj-ouLtdwGZFEjlVWjOaBObT3BlbkFJz2eFlyDgjzC0IcSguDCe'
+                },
+                body: JSON.stringify({
+                    model: 'text-davinci-003',
+                    prompt: 'Generate a random to-do content category and description.',
+                    max_tokens: 50
+                })
+            });
+
+            const data = await response.json();
+            const text = data.choices[0].text.trim();
+            resultDiv.innerHTML = `<strong>Generated To-Do:</strong> <br> ${text}`;
+        } catch (error) {
+            resultDiv.innerHTML = 'Error generating to-do. Please try again.';
+        }
+    });
+</script>
+
+</body>
+</html>
