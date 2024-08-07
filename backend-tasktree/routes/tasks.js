@@ -1,62 +1,63 @@
 const express = require('express');
 const router = express.Router();
-const Task = require('../models/Task');
+const { Category } = require('../models/models');
 
-// Create a new task
+// Create a new category
 router.post('/', async (req, res) => {
     try {
-        const newTask = new Task(req.body);
-        const savedTask = await newTask.save();
-        res.status(201).json(savedTask);
+        const newCategory = new Category(req.body);
+        const savedCategory = await newCategory.save();
+        res.status(201).json(savedCategory);
     } catch (err) {
+        console.error(err); // Log the error
         res.status(400).json({ error: err.message });
     }
 });
 
-// Get all tasks
+// Get all categories
 router.get('/', async (req, res) => {
     try {
-        const tasks = await Task.find();
-        res.status(200).json(tasks);
+        const categories = await Category.find();
+        res.status(200).json(categories);
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 });
 
-// Get a specific task by ID
+// Get a specific category by ID
 router.get('/:id', async (req, res) => {
     try {
-        const task = await Task.findById(req.params.id);
-        if (!task) {
-            return res.status(404).json({ error: 'Task not found' });
+        const category = await Category.findById(req.params.id);
+        if (!category) {
+            return res.status(404).json({ error: 'Category not found' });
         }
-        res.status(200).json(task);
+        res.status(200).json(category);
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 });
 
-// Update a task by ID
+// Update a category by ID
 router.put('/:id', async (req, res) => {
     try {
-        const updatedTask = await Task.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        if (!updatedTask) {
-            return res.status(404).json({ error: 'Task not found' });
+        const updatedCategory = await Category.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        if (!updatedCategory) {
+            return res.status(404).json({ error: 'Category not found' });
         }
-        res.status(200).json(updatedTask);
+        res.status(200).json(updatedCategory);
     } catch (err) {
         res.status(400).json({ error: err.message });
     }
 });
 
-// Delete a task by ID
+// Delete a category by ID
 router.delete('/:id', async (req, res) => {
     try {
-        const deletedTask = await Task.findByIdAndDelete(req.params.id);
-        if (!deletedTask) {
-            return res.status(404).json({ error: 'Task not found' });
+        const deletedCategory = await Category.findByIdAndDelete(req.params.id);
+        if (!deletedCategory) {
+            return res.status(404).json({ error: 'Category not found' });
         }
-        res.status(200).json({ message: 'Task deleted' });
+        res.status(200).json({ message: 'Category deleted' });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }

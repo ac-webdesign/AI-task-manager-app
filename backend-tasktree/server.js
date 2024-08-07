@@ -2,17 +2,31 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 5000;
+const cors = require('cors');
 
-// Middleware
-app.use(express.json());
+require('dotenv').config();
+
+// Import routes
+const taskRoutes = require('./routes/tasks'); 
+const generateAIRoutes = require('./routes/generateAI'); 
+
+const mongoURI = process.env.MONGO_URI;
+
 
 // MongoDB connection
-const mongoURI = 'mongodb+srv://papaxeloudi:alexakos123@cluster0.e63ohlp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
-// Routes
+// Middleware
+app.use(express.json());
+app.use(cors());
+//USE ROUTES
+app.use('/categories', taskRoutes);
+app.use('/generateAI', generateAIRoutes);
+
+
 app.get('/', (req, res) => {
     res.send('TaskTree Backend Server');
 });
