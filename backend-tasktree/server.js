@@ -28,7 +28,7 @@ app.use('/generateAI', generateAIRoutes);
 
 
 app.get('/', (req, res) => {
-    res.send('TaskTree Backend Server');
+    res.send('TaskTree Backend Server new');
 });
 
 app.listen(PORT, () => {
