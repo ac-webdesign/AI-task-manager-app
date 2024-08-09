@@ -14,6 +14,7 @@ function AddCategoryScreen() {
   const [subCategoryTitle, setSubCategoryTitle] = useState('');
   const [subCategoryDescription, setSubCategoryDescription] = useState('');
   const navigate = useNavigate();
+  const apiUrl = 'https://ai-task-manager-app.onrender.com';
 
   //EVENT HANDLERS
   const handleAddSubcategory = () => {
@@ -38,7 +39,7 @@ function AddCategoryScreen() {
     const categoryData = { title, description, subcategories ,createdAt,categoryType };
     console.log(categoryData); // Log the data to be sent
 
-    axios.post('/categories', categoryData)
+    axios.post(`${apiUrl}/categories`, categoryData)
       .then(response => {
         navigate('/mytasks');
       })

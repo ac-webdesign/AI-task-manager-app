@@ -9,15 +9,16 @@ function CategoryScreen() {
   const navigate = useNavigate();
   const [category, setCategory] = useState({ title: '', description: '', subcategories: [] });
   const [newSubcategory, setNewSubcategory] = useState({ title: '', description: '' });
+  const apiUrl = 'https://ai-task-manager-app.onrender.com';
 
   useEffect(() => {
-    axios.get(`/categories/${id}`)
+    axios.get(`${apiUrl}/categories/${id}`)
       .then(response => setCategory(response.data))
       .catch(error => console.error('Error fetching category:', error));
   }, [id]);
 
   const handleSaveChanges = () => {
-    axios.put(`/categories/${id}`, category)
+    axios.put(`${apiUrl}/categories/${id}`, category)
       .then(() => navigate('/mytasks'))
       .catch(error => console.error('Error updating category:', error));
   };

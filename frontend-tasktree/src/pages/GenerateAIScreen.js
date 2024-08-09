@@ -12,10 +12,11 @@ function GenerateAIScreen() {
   //STATE MANAGMENT
   const [aiCategory, setAiCategory] = useState(null);
   const navigate = useNavigate();
+  const apiUrl = 'https://ai-task-manager-app.onrender.com';
 
   //EVENT HANDLERS 
   const handleGenerateAICategory = () => {
-    axios.get('/generateAI')
+    axios.get(`${apiUrl}/generateAI`)
       .then(response => {
         const randomCategory = response.data[Math.floor(Math.random() * response.data.length)];
         setAiCategory(randomCategory);
@@ -30,7 +31,7 @@ function GenerateAIScreen() {
     const createdAt = new Date();
     const categoryData = { ...aiCategory, createdAt, categoryType };
 
-    axios.post('/categories', categoryData)
+    axios.post(`${apiUrl}/categories`, categoryData)
       .then(response => {
         console.log('Category saved:', response.data);
         navigate('/mytasks');
